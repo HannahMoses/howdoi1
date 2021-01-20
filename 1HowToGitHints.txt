@@ -1,0 +1,139 @@
+1HowToGitHints
+If git clone command does not work,switch from SSH
+git@github.com:jayramrout/batch32.git  TO
+https://github.com/jayramrout/batch32.git (HTTPS in the green button
+                          that says clone or download)
+
+
+vi to open a file
+:wq 
+ press ENTR to write and save
+i = insert; esc =go back to non-inserting mode
+THEN 
+:wq press ENTER
+
+OTHER GIT BASH COMMANDS
+:q save & quit
+:q! quit without saving
+
+:q! to exit without saving
+:wq
+
+===========++++++++++++++==========
+10:53 PM 2/15/2020
+
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~
+$ dir
+3D\ Objects            Music
+AppData                My\ Documents
+Application\ Data      NetHood
+beginner1              NTUSER.DAT
+bluej                  ntuser.dat.LOG1
+ChromeSetup.exe        ntuser.dat.LOG2
+Contacts               NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TM.blf
+Cookies                NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TMContainer00000000000000000001.regtrans-ms
+Database               NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TMContainer00000000000000000002.regtrans-ms
+Documents              ntuser.ini
+Downloads              OneDrive
+eclipse                PrintHood
+eclipse-workspace      Recent
+Favorites              Saved\ Games
+IdeaProjects           Searches
+IntelGraphicsProfiles  SendTo
+Links                  Start\ Menu
+Local\ Settings        Templates
+MicrosoftEdgeBackups   Videos
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~
+$ cd IdeaProjects
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects
+$ dir
+[JavaBatch32Hannah]  CoreJava  Development  HannahJavaBatch32  HelloWorld
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects
+$ git init Hannah2020JavaBatch32
+Initialized empty Git repository in C:/Users/h19SL/IdeaProjects/Hannah2020JavaBatch32/.git/
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects
+$ git clone https://github.com/HannahMoses/Hannah2020JavaBatch32
+fatal: destination path 'Hannah2020JavaBatch32' already exists and is not an empty directory.
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects
+$ git clone https://github.com/HannahMoses/Hannah2020JavaBatch32
+Cloning into 'Hannah2020JavaBatch32'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 856 bytes | 2.00 KiB/s, done.
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects
+$ git init
+Initialized empty Git repository in C:/Users/h19SL/IdeaProjects/.git/
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Development/
+        Hannah2020JavaBatch32/
+        HannahJavaBatch32/
+        HelloWorld/
+        [JavaBatch32Hannah]/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects (master)
+$ dir
+[JavaBatch32Hannah]  CoreJava  Development  Hannah2020JavaBatch32  HannahJavaBatch32  HelloWorld
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects (master)
+$ cd Hannah2020JavaBatch32
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects/Hannah2020JavaBatch32 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects/Hannah2020JavaBatch32 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/h19SL/IdeaProjects/Hannah2020JavaBatch32/.git/
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects/Hannah2020JavaBatch32 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects/Hannah2020JavaBatch32 (master)
+$ git pull https://github.com/HannahMoses/Hannah2020JavaBatch32
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.00 KiB | 4.00 KiB/s, done.
+From https://github.com/HannahMoses/Hannah2020JavaBatch32
+ * branch            HEAD       -> FETCH_HEAD
+Updating 811199e..1408ca3
+Fast-forward
+ README.md | 27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+
+h19SL@LAPTOP-I7UJGI2C MINGW64 ~/IdeaProjects/Hannah2020JavaBatch32 (master)
+$ exit
+
+
+
